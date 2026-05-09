@@ -1,9 +1,11 @@
 name: 포켓몬스토어 재고 감시
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'  # 5분마다 실행
-  workflow_dispatch:  # 수동 실행 버튼
+     schedule:
+       - cron: '*/30 * * * *'  # 백업: 30분마다 (cron-job.org 죽으면 동작)
+     workflow_dispatch:  # 수동 실행 버튼
+     repository_dispatch:
+       types: [pokemon-check]
 
 concurrency:
   group: stock-monitor
