@@ -17,9 +17,14 @@ from playwright.sync_api import sync_playwright
 
 # 감시할 URL 목록 (필요 시 수정)
 URLS = [
-    "https://www.pokemonstore.co.kr/pages/product/list.html?depth=2&categoryNo=488359&page=1",
-    "https://www.pokemonstore.co.kr/pages/product/list.html?depth=2&categoryNo=488359&page=2",
-    "https://www.pokemonstore.co.kr/pages/product/list.html?depth=2&categoryNo=488359&page=3",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488359&pageNumber=1&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488359&pageNumber=2&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488359&pageNumber=3&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488357&pageNumber=1&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488357&pageNumber=2&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488361",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488361&pageNumber=2&pageSize=20&depth=&sortType=SALE_CNT&keywords=&visiblePagesCount=",
+    "https://www.pokemonstore.co.kr/pages/product/product-list.html?categoryNo=488371",
 ]
 
 STATE_FILE = Path("state.json")
